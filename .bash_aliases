@@ -28,6 +28,16 @@ alias ltree='tree --dirsfirst -ChFupDaLg 1'
 alias free='free -hmt'
 alias restart='sudo rc.d restart'
 alias rm='rm -I'
+alias du='du -kh' # Makes a more readable output.
+alias df='df -kTh'
+alias more='less'
+#read the fcuking manual!
+alias rtfm='man'
+
+#process listing
+alias psx='ps auxw | egrep'
+alias psgrep='ps auxw | egrep'
+alias path='echo -e ${PATH//:/\\n}'
 
 #git aliases
 #alias git='hub' 
