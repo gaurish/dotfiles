@@ -1,12 +1,30 @@
 #ArchLinux & other Linux commands
 alias upgrade='yaourt -Syua'
 alias i='yaourt'
-alias ls='ls -alh --color'
-alias ll='ls -la --color'
+
+#directory listing shortcuts
+alias ls='ls -lh --color'
+alias ll='ls -la -group-directories-first --color'
+alias lx='ls -lXB' # sort by extension
+alias lk='ls -lSr' # sort by size, biggest last
+alias lc='ls -ltcr' # sort by and show change time, most recent last
+alias lu='ls -ltur' # sort by and show access time, most recent last
+alias lt='ls -ltr' # sort by date, most recent last
+alias lm='ls -al |more' # pipe through 'more'
+alias lr='ls -lR' # recursive ls
+alias tree='tree -Csu' # nice alternative to 'recursive ls'
 alias grep='grep --color'
 alias tail='tail -f -n 150'
+
+#navigational shortcuts
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias cd..='cd ..'
+alias ~='cd ~'
+alias ltree='tree --dirsfirst -ChFupDaLg 1'
+
 alias free='free -hmt'
 alias restart='sudo rc.d restart'
 alias rm='rm -I'
