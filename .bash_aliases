@@ -41,7 +41,7 @@ alias path='echo -e ${PATH//:/\\n}'
 
 #git aliases
 #alias git='hub' 
-alias gst='git status -s'
+alias gst='git status -sb'
 alias gca='git commit -av'
 alias gb='git branch --color'
 alias gco='git checkout'
