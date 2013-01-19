@@ -23,7 +23,14 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias cd..='cd ..'
 alias ~='cd ~'
-alias ltree='tree --dirsfirst -ChFupDaLg 1'
+alias ltree
+
+#create new directoy & cd into it
+function mcd() {
+  mkdir -p "$1" && cd "$1";
+}
+
+='tree --dirsfirst -ChFupDaLg 1'
 
 alias free='free -hmt'
 alias restart='sudo rc.d restart'
