@@ -48,7 +48,12 @@ public/uploads/*
 # Node
 node_modules/
 
+#vim
 *~
+*.swp
+*.swo
+
+#rails
 *.rbc
 *.sassc
 capybara-*.html
