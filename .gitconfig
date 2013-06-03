@@ -1,13 +1,13 @@
 [core]
     excludesfile = ~/.gitignore_global
 [web]
-    browser = open
+    browser = firefox
 [apply]
   # Detect whitespace errors when applying a patch
   whitespace = fix
 
 [alias]
-    s    = status
+    s    = status -sb
     cm   = commit
     c    = !git add . && git commit -a && git push
     fuck = !git commit --amend && git push --force
@@ -17,6 +17,9 @@
     l    = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     who  = shortlog -s -n --
     go   = checkout -B
+    lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author joe
+    purr = pull --rebase
 [color]
     ui = auto
 [color "branch"]
@@ -51,8 +54,7 @@ insteadOf = "github:"
 insteadOf = "gst:"
 pushInsteadOf = "gist:"
 pushInsteadOf = "git://gist.github.com/"
-[url "git://gist.github.com/"]
-insteadOf = "gist:"
+
 
 [push]
 default = tracking
