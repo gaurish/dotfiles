@@ -93,3 +93,4 @@ default = tracking
 [user]
     email = contact@gaurishsharma.com
     name = Gaurish Sharma
+    editor = vim
