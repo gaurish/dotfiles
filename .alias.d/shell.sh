@@ -5,7 +5,6 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 
 alias gv='gvim'
-alias g='gvim'
 
 alias du='du -kh'       # Makes a more readable output.
 alias df='df -kTh'
